@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-video {
+    width: 100vw;
+    height: 100vh;
+
+
+
+    /* A posisão do elemento será fixa em relação ao navegador */
+    position: fixed;
+
+    /* O vídeo ficará a 0px de distância do topo e da margem esquerda */
+    top: 0;
+    left: 0;
+
+    /* Irá controlar como o objeto será redimensionado na tela */
+    object-fit: cover;
+
+    /* z-index controla as camadas do navegador, o valor -1 irá definir que este elemento ficará atras dos demais */
+    z-index: -2;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* controlei o fundo do meu video, quase isso */
+    background-color: rgb(31, 27, 27, 0.2);
+}
+
+.form-cadastro{
+    width: 40vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.897);
+    /* backdrop-filter: blur(15px) */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.imgTopo{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+
+}
+input, button{
+    padding: 10px, 20px;
+    margin-bottom: 20px;
+    /* outline: none; */
+    /* border-radius: 10px; */
+    border: 3px solid #ddd;
+    box-shadow: 0 0 10px #5d5d5d;
+    font-size: 1.2em;
+}
+
+#mensagem{
+    height: 20px;
+    margin: -15px 0 20px 0;
+    color: red;
+}
+
+.ativo{
+    background-color: #08b4e9;
+    color: #fff;
+    box-shadow:  0 0 4px #08b4e9 ;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border: 0px;
+    cursor: pointer;
+}
+.ativo:hover{
+    box-shadow: 0 0 60px #08b4e9;
+}
+
+.inativo{
+background-color: #ccc;
+border: 1px solid #888;
+color: #8a7b7b;
+margin-bottom: 20px;
+}
